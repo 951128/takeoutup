@@ -1,0 +1,240 @@
+@import url("base.css");
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);  /*消除点击时的高亮*/
+	-webkit-text-size-adjust: none;
+}
+a {
+	text-decoration: none;
+}
+body {
+	overflow: hidden;
+}
+/*头部开始*/
+.top {
+	width: 100%;
+	height: 0.88rem;
+	padding: 0 0.25rem;
+	background: #FFFFFF;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.top a {
+	width: 0.3rem;
+	height: 100%;
+	background: #FFFFFF;
+}
+.top i {
+	font-size: 0.3rem;
+	color: #3237fb;
+	line-height: 0.88rem;
+	float: left;
+}
+.top .top-right i {
+	margin-left: 0.1rem;
+}
+.top h1 {
+	font-size: 0.35rem;
+	font-weight: 700;
+	color: #000000;
+}
+/*头部结束*/
+
+/*登录开始*/
+.denglu {
+	/*margin-top: -12.46rem;*/
+	height: 12.46rem;
+	width: 100%;
+	background: -webkit-linear-gradient(-105deg,#3135f0, #2e70f8 20%, #e1ecf1 55%);
+}
+.denglu img.ditu {
+	width: 100%;
+	height: 4.75rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.denglu .zhezhao {
+	width: 100%;
+	height: 12.46rem;
+	position: absolute;
+	top: 0.88rem;
+	left: 0;
+	background: rgba(255,255,255,0.5);
+}
+.denglu .xian1 {
+	display: inline-block;
+	width: 0.06rem;
+	height: 2.65rem;
+	margin-left: 1.55rem;
+	background: -webkit-linear-gradient(top,#f5ca36,#e3f62e);
+}
+.denglu .xian2 {
+	display: inline-block;
+	float: right;
+	width: 0.06rem;
+	height: 2.65rem;
+	margin-right: 1.55rem;
+	background: -webkit-linear-gradient(top,#f5ca36,#e3f62e);
+}
+.zhezhao .logo {
+	width: 0.95rem;
+	height: 0.95rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 0.95rem;
+}
+.zhezhao .zhou {
+	width: 6.75rem;
+	height: 0.4rem;
+	position: absolute;
+	top: 2.55rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.login {
+	width: 5.1rem;
+	height: 5.3rem;
+	margin: 0 auto;
+	background: #FFFFFF;
+	margin-top: 0.12rem;
+	border-bottom-left-radius: 0.4rem;
+	border-bottom-right-radius: 0.4rem;
+	box-shadow: 0 0.03rem 0.2rem 0.02rem #817d7d;
+	overflow: hidden;
+}
+.login .zhanghao {
+	position: relative;
+	height: 0.6rem;
+}
+.login input {
+	display: block;
+	color: #000000;
+	font-size: 0.18rem;
+	width: 4rem;
+	height: 0.6rem;
+	margin: 0.6rem auto 0;
+	border-radius: 0.29rem;
+	border: 0.01rem solid #a6a6a6;
+	padding: 0 0.4rem;
+}
+input[type="text"]:focus{
+    outline:none;
+}
+.login .dian {
+	width: 0.07rem;
+	height: 0.07rem;
+	background: #35adf9;
+	border-radius: 0.035rem;
+	border: 0.03rem solid #9ad6fc;
+	position: absolute;
+	top: 0.27rem;
+	left: 0.75rem;
+}
+.login #cuo {
+	display: inline-block;
+	position: absolute;
+	top: 0.2rem;
+	right: 0.75rem;
+	color: #3040f1;
+	font-size: 0.2rem;
+}
+.login .tan {
+	width: auto;
+	font-size: 0.16rem;
+	color: #FFFFFF;
+	border-top-right-radius: 0.15rem;
+	border-top-left-radius: 0.15rem;
+	position: absolute;
+	top: -0.16rem;
+	right: 1rem;
+	padding: 0 0.1rem;
+	background: -webkit-linear-gradient(top,#57e5e6,#3773eb);
+}
+.login .zhanghao:nth-child(2) input {
+	margin: 0.35rem 0.55rem;
+}
+.login .zhanghao:nth-child(2) .dian {
+	background: #35adf9;
+	border-color: #9ad6fc;
+}
+.login .zhanghao:nth-child(2) #cuo {
+	color: #52d1e7;
+}
+.login .button {
+	display: inline-block;
+	float: left;
+	width: 4rem;
+	height: 0.6rem;
+	border-radius: 0.3rem;
+	background: #2f51f4;
+	font-size: 0.26rem;
+	color: #FFFFFF;
+	line-height: 0.6rem;
+	text-align: center;
+	margin: 0.35rem 0.55rem 0.15rem 
+}
+.denglu-text {
+	width: 4rem;
+	margin: 0 auto;
+}
+.denglu-text > a {
+	display: inline-block;
+	float: left;
+	font-size: 0.2rem;
+	color: #b8b8b8;
+}
+.denglu-text p {
+	display: inline-block;
+	float: right;
+	font-size: 0.2rem;
+	color: #b8b8b8;
+}
+.denglu-text p a {
+	color: #3137f0;
+}
+.login .sanfang {
+	float: left;
+	width: 3.5rem;
+	margin: 0.7rem 0.8rem 0.2rem;
+}
+.login .sanfang img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.sanfang .tubiao {
+	display: flex;
+	justify-content: center;
+	margin-top: 0.2rem;
+}
+.sanfang .tubiao i:first-child {
+	color: #68a5e1;
+}
+.sanfang .tubiao i:nth-child(2) {
+	color: #50b674;
+	margin: 0 0.35rem;
+}
+.sanfang .tubiao i:nth-child(3) {
+	color: #ea5d5c;
+}
+.zhezhao> i {
+	font-size: 1.2rem;
+	color: #ecb03d;
+	float: left;
+	margin-top: -0.4rem;
+	margin-left: 1.7rem;
+}
+.zhezhao .shoubi {
+	float: left;
+	width: 0.33rem;
+	height: 4rem;
+	background-color: #ECB03D;
+	margin-top: 0.7rem;
+	margin-left: -0.8rem;
+}
+/*登录结束*/

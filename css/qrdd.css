@@ -1,0 +1,292 @@
+@import url("base.css");
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);  /*消除点击时的高亮*/
+	-webkit-text-size-adjust: none;
+}
+a {
+	text-decoration: none;
+}
+body {
+/*	position: relative;*/
+}
+/*头部开始*/
+.top {
+	width: 100%;
+	height: 0.88rem;
+	padding: 0 0.25rem;
+	background: #FFFFFF;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.top a {
+	width: 0.3rem;
+	height: 100%;
+	background: #FFFFFF;
+}
+.top i {
+	font-size: 0.3rem;
+	color: #3237fb;
+	line-height: 0.88rem;
+	float: left;
+}
+.top .top-right i {
+	margin-left: 0.1rem;
+}
+.top h1 {
+	font-size: 0.35rem;
+	font-weight: 700;
+	color: #000000;
+}
+/*头部结束*/
+
+/*订单详情开始*/
+.dingdan-box {
+	position: absolute;
+	top: 0.88rem;
+	bottom: 0.7rem;
+	width: 100%;
+	padding: 0 0.25rem;
+	background: -webkit-linear-gradient(-105deg,#3135f0, #2e70f8 20%, #e1ecf1 55%);
+}
+.dingdan-box h4 {
+	color: #abb4fa;
+	font-size: 0.24rem;
+	line-height: 0.68rem;
+}
+.dingdan-box h1 {
+	color: #FFFFFF;
+	font-size: 0.4rem;
+	font-weight: bold;
+}
+.dingdan-box h1 i {
+	float: right;
+	font-size: 0.32rem;
+	color: #FFFFFF;
+	margin-right: 1.7rem;
+	margin-top: 0.06rem;
+}
+.dingdan-box h2 {
+	display: block;
+	color: #FFFFFF;
+	font-size: 0.3rem;
+	line-height: 0.78rem;
+}
+.dingdan-box h2 span {
+	margin-left: 0.95rem;
+}
+
+/*订单数据开始*/
+.shuju {
+	width: 6.7rem;
+	padding: 0 0.25rem;
+	background: #FFFFFF;
+	margin: 0 auto;
+	box-shadow: 0 0.03rem 0.2rem 0.02rem #817d7d;
+}
+.shuju .shuju-top {
+	width: 100%;
+	height: 0.98rem;
+	border-bottom: 0.01rem dashed #acaaaa;
+}
+.shuju .shuju-top:last-child {
+	border-bottom: 0;
+}
+.shuju-top .left {
+	display: inline;
+	float: left;
+	font-size: 0.24rem;
+	color: #000000;
+	/*line-height: 0.98rem;*/
+}
+.shuju-top:last-child .left {
+	line-height: 0.98rem;
+}
+.shuju-top .left span{
+	display: block;
+	font-size: 0.24rem;
+	color: #000000;
+	margin-top: 0.22rem;
+}
+.shuju-top .left span.text {
+	display: block;
+	float: left;
+	margin-top: 0.1rem;
+	font-size: 0.18rem;
+	color: #FFFFFF;
+	background: #060bf0;
+}
+.shuju-top .right {
+	float: right;
+	display: inline;
+	font-size: 0.24rem;
+	color: #3b55f0;
+	line-height: 0.94rem;
+}
+.shuju-top .right i {
+	font-size: 0.3rem;
+	color: #7F7F7F;
+	margin-left: 0.2rem;
+
+}
+/*订单数据结束*/
+
+/*具体订单开始*/
+.dingdan-info {
+	width: 6.7rem;
+	padding: 0 0.25rem;
+	background: #FFFFFF;
+	margin: 0 auto;
+	margin-top: 0.25rem;
+	box-shadow: 0 0.03rem 0.2rem 0.02rem #817d7d;
+}
+.dingdan-info .title {
+	width: 100%;
+	height: 0.88rem;
+	font-size: 0.32rem;
+	line-height: 0.88rem;
+	color: #000000;
+	border-bottom: 0.02rem solid #b7b7b7;
+}
+.dingdan-wrap {
+	width: 100%;
+	height: 0.88rem;
+	font-size: 0.24rem;
+	line-height: 0.88rem;
+	color: #333333;
+	border-bottom: 0.01rem dashed #d5d4d4;
+	margin-top: 0.01rem;
+}
+.dingdan-wrap img {
+	width: 0.65rem;
+	height: 0.65rem;
+	margin-top: 0.12rem;
+	float: left;
+}
+.dingdan-wrap span {
+	float: right;
+}
+.dingdan-wrap span.title1 {
+	float: left;
+	margin-left: 0.2rem;
+}
+.dingdan-wrap span.zhuansong {
+	float: left;
+	background: #060BF0;
+	height: 0.2rem;
+	margin-top: 0.34rem;
+	font-size: 0.18rem;
+	color: #FFFFFF;
+	line-height: 0.2rem;
+}
+.dingdan-wrap span.text1 {
+	color: #f64c48;
+}
+.dingdan-wrap span.text2 {
+	color: #898888;
+	margin-right: 0.3rem;
+	text-decoration: line-through;
+}
+.dingdan-wrap span.text3 {
+	float: left;
+	margin-left: 1.6rem;
+}
+.dingdan-wrap:nth-child(2) {
+	border-top: 0.01rem solid #D5D4D4;
+}
+.dingdan-wrap:nth-child(5) {
+	border-bottom: 0.02rem solid #b7b7b7;
+	color: #898888;
+}
+.dingdan-wrap:nth-child(5) .title1{
+	margin-left: 0;
+}
+.dingdan-wrap:nth-child(6) {
+	border-bottom: 0;
+	border-top: 0.01rem solid #D5D4D4;
+	color: #898888;
+}
+.dingdan-wrap:nth-child(6) .title1 {
+	margin-left: 0;
+}
+.dingdan-wrap:nth-child(6) .text1 {
+	color: #000000;
+	font-size: 0.3rem;
+}
+.dingdan-wrap:nth-child(6) .text2 {
+	margin-right: 0;
+	color: #333333;
+	text-decoration: none;
+}
+/*具体订单结束*/
+
+/*订单备注开始*/
+.dingdan-beizhu {
+	width: 6.7rem;
+	padding: 0.25rem;
+	background: #FFFFFF;
+	margin: 0 auto;
+	margin-top: 0.25rem;
+	box-shadow: 0 0.03rem 0.2rem 0.02rem #817d7d;
+}
+.beizhu {
+	width: 100%;
+	height: 0.88rem;
+}
+.beizhu p {
+	display: inline-block;
+	color: #343434;
+	font-size: 0.24rem;
+	line-height: 0.88rem;
+	float: left;
+}
+.beizhu span {
+	display: inline-block;
+	color: #898888;
+	font-size: 0.22rem;
+	float: right;
+	line-height: 0.8rem;
+}
+.beizhu span i {
+	display: inline-block;
+	color: #898888;
+	font-size: 0.3rem;
+
+}
+/*订单备注结束*/
+/*订单详情结束*/
+
+/*tap栏开始*/
+.tap {
+	width: 100%;
+	height: 0.7rem;
+	position: absolute;
+	left: 0;
+	bottom: 0rem;
+}
+.tap .tapB {
+	width: 100%;
+	height: 0.7rem;
+	background: rgba(0,0,0,0.9);
+	font-size: 0.18rem;
+	color: #535353;
+	line-height: 0.7rem;
+	padding-left: 0.25rem;
+}
+.tap .tapB span {
+	font-size: 0.2rem;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.tap .tapB .btn {
+	width: 1.85rem;
+	height: 100%;
+	background: #009944;
+	color: #FFFFFF;
+	font-size: 0.26rem;
+	line-height: 0.7rem;
+	text-align: center;
+	float: right;
+}
+/*tap栏结束*/

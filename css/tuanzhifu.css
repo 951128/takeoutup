@@ -1,0 +1,237 @@
+@import url("base.css");
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);  /*消除点击时的高亮*/
+	-webkit-text-size-adjust: none;
+}
+a {
+	text-decoration: none;
+}
+body {
+	/*position: relative;*/
+}
+/*头部开始*/
+.top {
+	width: 100%;
+	height: 0.88rem;
+	padding: 0 0.25rem;
+	background: #FFFFFF;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.top a {
+	width: 0.3rem;
+	height: 100%;
+	background: #FFFFFF;
+}
+.top i {
+	font-size: 0.3rem;
+	color: #3237fb;
+	line-height: 0.88rem;
+	float: left;
+}
+.top .top-right i {
+	margin-left: 0.1rem;
+}
+.top h1 {
+	font-size: 0.35rem;
+	font-weight: 700;
+	color: #000000;
+}
+/*头部结束*/
+
+/*银行卡详情开始*/
+.dingdan-box {
+	position: absolute;
+	top: 0.88rem;
+	bottom: 0;
+	width: 100%;
+	padding: 0 0.25rem;
+	background: -webkit-linear-gradient(-105deg,#3135f0, #2e70f8 20%, #e1ecf1 55%);
+}
+.zhifu {
+	width: 7rem;
+	height: 0.88rem;
+	background: #FFFFFF;
+	margin: 0.35rem auto 0.35rem;
+	padding: 0 0.25rem;
+	font-size: 0.3rem;
+	color: #000000;
+	line-height: 0.88rem;
+}
+.zhifu span {
+	float: right;
+	color: #F64C48;
+	font-size: 0.22rem;
+	margin-right: 0.1rem;
+	margin-top: 0.02rem;
+}
+.zhifu p {
+	display: inline-block;
+	font-size: 0.28rem;
+	color: #F64C48;
+	float: right;
+}
+.ka {
+	width: 6.2rem;
+	height: 3rem;
+	margin: 0 auto;
+	border-radius: 0.25rem;
+	padding: 0.25rem 0.25rem;
+	background: -webkit-linear-gradient(left,#366deb, #58e8e6);
+}
+.ka > a {
+	width: 100%;
+	height: 100%;
+}
+.ka > i {
+	font-size: 0.56rem;
+	float: left;
+	color: #13227a;
+}
+.dingdan-box .ka:nth-child(3) > i {
+	color: #d81e06;
+}
+.ka .name {
+	font-size: 0.28rem;
+	color: #FFFFFF;
+	float: left;
+	line-height: 0.56rem;
+	margin-left: 0.2rem;
+}
+.ka .name i {
+	margin-left: 1.8rem;
+	font-size: 0.28rem;
+	line-height: 0.56rem;
+}
+.ka p.name {
+	color: #FFFFFF;
+	font-size: 0.28rem;
+	text-align: center;
+	/*margin: 0 auto;*/
+	margin: 0.35rem 1.35rem 0;
+}
+.ka .xinxi {
+	float: left;
+	height: 0.2rem;
+	margin-left: 1.05rem;
+	font-size: 0.2rem;
+	color: #FFFFFF;
+	display: block;
+	/*display: inline-block;*/
+	margin-top: 0.2rem;
+}
+.ka .xinxi .dian {
+	float: left;
+	display: inline-block;
+	width: 0.06rem;
+	height: 0.06rem;
+	border-radius: 0.07rem;
+	background: #ffd220;
+	border: 0.04rem solid #59ff84;
+	margin-top: 0.07rem;
+	margin-right: 0.08rem;
+}
+.ka .xinxi p {
+	display: inline-block;
+}
+.dingdan-box .ka:nth-child(2) {
+	margin-bottom: 0.35rem;
+	background: -webkit-linear-gradient(left,#33bc5d, #58e881);
+}
+/*银行卡详情结束*/
+
+/*图案开始*/
+.tuan {
+	width: 100%;
+	height: 8.2rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(255,255,255,0.5);
+}
+.tuan a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.tuan h1 {
+	font-size: 0.28rem;
+	text-align: center;
+	color: #000000;
+	margin-top: 1rem;
+	margin-bottom: 0.2rem;
+}
+.tuan .dian {
+	width: 0.45rem;
+	height: 0.08rem;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+.tuan .dian .diandian {
+	border-radius: 0.04rem;
+	width: 0.08rem;
+	background: rgba(111,177,251,1);
+}
+.tuan .dian .diandian:nth-child(2) {
+	width: 0.08rem;
+	margin: 0 0.1rem;
+	background: rgba(111,177,251,0.7);
+}
+.tuan .dian .diandian {
+	width: 0.08rem;
+	background: rgba(111,177,251,0.5);
+}
+.tuan-box {
+	width: 4.5rem;
+	height: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 1rem;
+}
+.tuan-box .quan {
+	width: 0.5rem;
+	height: 0.5rem;
+	border: 0.12rem solid #a2c7ee;
+	background: #6fb1fb;
+	border-radius: 0.25rem;
+}
+.tuan .tuan-box:nth-of-type(3) {
+	margin: 1.5rem auto;
+}
+.tuan .tuan-box:nth-of-type(4) {
+	margin: 0 auto;
+}
+.hua1 {
+	width: 2.26rem;
+	height: 0.26rem;
+	background: rgba(111,177,251,0.6);
+	position: absolute;
+	left: 1.62rem;
+	top: 2.68rem;
+	border-radius: 0.13rem;
+}
+.hua2 {
+	width: 4.26rem;
+	height: 0.26rem;
+	background: rgba(111,177,251,0.6);
+	position: absolute;
+	left: 1.62rem;
+	top: 4.68rem;
+	border-radius: 0.13rem;
+	transform:rotate(90deg);
+}
+.hua3 {
+	width: 5.9rem;
+	height: 0.26rem;
+	background: rgba(111,177,251,0.6);
+	transform:rotate(45deg);
+	position: absolute;
+	left: 0.81rem;
+	top: 4.7rem;
+	border-radius: 0.13rem;
+}
+/*图案结束*/

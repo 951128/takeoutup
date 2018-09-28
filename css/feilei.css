@@ -1,0 +1,252 @@
+@import url("base.css");
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);  /*消除点击时的高亮*/
+	-webkit-text-size-adjust: none;
+}
+a {
+	background-color: #333333;
+}
+/*头部开始*/
+.top {
+	width: 100%;
+	height: 0.88rem;
+	padding: 0 0.25rem;
+	background: #3237fb;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.top a {
+	width: 0.3rem;
+	height: 100%;
+	background: #3237fb;
+}
+.top i {
+	font-size: 0.3rem;
+	color: #FFFFFF;
+	line-height: 0.88rem;
+	float: left;
+}
+.top h1 {
+	font-size: 0.35rem;
+	font-weight: 700;
+	color: #FFFFFF;
+}
+/*头部结束*/
+
+/*导航开始*/
+.nav {
+	width: 100%;
+	height: 0.82rem;
+	padding: 0 0.25rem;
+	position: relative;
+	background: linear-gradient(to right,#00AAFF,#0085FF);
+}
+.nav .feilei-wrap {
+	width: 6.2rem;
+	height: 100%;
+	overflow-x: auto;
+	/*overflow: hidden;*/
+}
+.nav .feilei-wrap::-webkit-scrollbar {
+	width:0;
+	height:0;
+	display:none;
+}
+.nav .feilei {
+	width: auto;
+	height: 100%;
+	float: left;
+	display: inline-block;
+	display: flex;
+	/*flex-wrap: nowrap;*/
+	/*overflow-x: auto;*/
+	/*overflow: hidden;*/
+}
+.nav .feilei li {
+	display: inline-block;
+	/*width: 1rem;*/
+	float: left;
+	height: 0.72rem;
+	margin-right: 0.5rem;
+	font-size: 0.32rem;
+	line-height: 0.82rem;
+	white-space: nowrap;
+	color: #90CEFF;
+	margin-bottom: 0.1rem;
+}
+.nav .feilei li.hot {
+	color: #FFFFFF;
+	font-weight: bold;
+	border-bottom: 0.05rem solid #FFFFFF;
+}
+.nav i {
+	display: inline-block;
+	font-size: 0.3rem;
+	position: absolute;
+	top: 0.26rem;
+	right: 0.25rem;
+	color: #90CEFF;
+}
+.tuijian-nav {
+	width: 7.5rem;
+	height: 0.8rem;
+	border-bottom: 0.01rem solid #F8F8F8;
+	display: flex;
+	justify-content: space-between;
+	/*margin: 0 auto 0.3rem;*/
+	line-height: 0.8rem;
+	padding: 0 0.25rem;
+}
+.tuijian-nav h2 {
+	font-size: 0.24rem;
+	color: #B7B7B7;
+}
+.tuijian-nav h2 i {
+	font-size: 0.24rem;
+}
+.tuijian-nav h2.hot{
+	color: #333333;
+}
+/*导航结束*/
+
+/*列表开始*/
+.list-box {
+	width: 100%;
+	position: absolute;
+	top: 2.5rem;
+	bottom: 0;
+	background: #e1ecf1;
+	padding: 0.25rem;
+	overflow-y: scroll;
+	/*overflow-x: hidden;*/
+}
+.list-box::-webkit-scrollbar {
+	width:0;
+	height:0;
+	display:none;
+}
+.list-box li {
+	width: 100%;
+	height: 2.4rem;
+	margin-bottom: 0.25rem;
+	box-shadow: 0 0.05rem 0.2rem 0.02rem #817d7d;
+	border-radius: 0.05rem;
+	background: #FFFFFF;
+	padding: 0.25rem;
+}
+.list-box li a {
+	width: 100%;
+	height: 100%;
+}
+.img-box {
+	width: 1.05rem;
+	height: 1.05rem;
+	margin-right: 0.25rem;
+	float: left;
+}
+.img-box img {
+	width: 100%;
+	height: 100%;
+}
+.list-text {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 1.9rem;
+}
+.list-text h1 {
+	font-size: 0.24rem;
+	color: #333333;
+}
+.list-text .text1 {
+	width: 100%;
+	height: 0.18rem;
+	color: #808080;
+}
+.list-text .text1 .imgwrap {
+	width: 0.6rem;
+	height: 0.1rem;
+	float: left;
+	position: relative;
+}
+.list-text .text1 .imgwrap img {
+	width: 100%;
+	height: 100%;
+	margin-top: 0.03rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: left;
+}
+.list-text .text1 .imgwrap:nth-of-type(2){
+	width: 0.3rem;
+}
+.list-text .text1 p {
+	display: inline-block;
+	float: left;
+	font-size: 0.18rem;
+	margin-right: 0.65rem;
+}
+.list-text .text1 .fengniao {
+	background: #060bf0;
+	color: #FFFFFF;
+	float: right;
+	font-size: 0.16rem;
+	line-height: 0.18rem;
+	height: 0.18rem;
+}
+.list-text .text2 p {
+	font-size: 0.18rem;
+	color: #808080;
+	display: inline-block;
+	float: left;
+}
+.list-text .text2 p:last-child {
+	float: right;
+}
+.list-text .text3 {
+	width: 100%;
+	border-bottom: 0.03rem dashed #808080;
+}
+.list-text .text4 span {
+	width: 0.22rem;
+	height: 0.22rem;
+	background: red;
+	color: #FFFFFF;
+	float: left;
+	margin-right: 0.05rem;
+	font-size: 0.2rem;
+}
+.list-text .text4 p {
+	display: inline-block;
+	float: left;
+	font-size: 0.2rem;
+	color: #808080;
+	line-height: 0.22rem;
+}
+.list-text .text4 p:nth-of-type(2) {
+	float: right;
+}
+.list-text .text4 i {
+	display: inline-block;
+	font-size: 0.22rem;
+	float: right;
+	color: #808080;
+}
+.list-text .text5 i {
+	display: inline-block;
+	float: left;
+	font-size: 0.22rem;
+	color: #f0dd06;
+	margin-right: 0.05rem;
+}
+.list-text .text5 p {
+	display: inline-block;
+	float: left;
+	font-size: 0.2rem;
+	color: #808080;
+}
+/*列表结束*/

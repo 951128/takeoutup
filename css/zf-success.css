@@ -1,0 +1,254 @@
+@import url("base.css");
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);  /*消除点击时的高亮*/
+	-webkit-text-size-adjust: none;
+}
+a {
+	text-decoration: none;
+}
+body {
+	/*position: relative;*/
+}
+/*头部开始*/
+.top {
+	width: 100%;
+	height: 0.88rem;
+	padding: 0 0.25rem;
+	background: #FFFFFF;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.top a {
+	width: 0.3rem;
+	height: 100%;
+	background: #FFFFFF;
+}
+.top i {
+	font-size: 0.3rem;
+	color: #3237fb;
+	line-height: 0.88rem;
+	float: left;
+}
+.top .top-right i {
+	margin-left: 0.1rem;
+}
+.top h1 {
+	font-size: 0.35rem;
+	font-weight: 700;
+	color: #000000;
+}
+/*头部结束*/
+
+/*支付详情开始*/
+.dingdan-box {
+	position: absolute;
+	top: 0.88rem;
+	bottom: 0;
+	width: 100%;
+	padding: 0 0.25rem;
+	background: -webkit-linear-gradient(-105deg,#3135f0, #2e70f8 20%, #e1ecf1 55%);
+}
+.dingdan-box h1 {
+	font-size: 0.4rem;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.dingdan-box i {
+	font-size: 1.2rem;
+	color: #FFFFFF;
+	text-align: center;
+	margin-left: 2.8rem;
+}
+.dingdan-box p {
+	font-size: 0.3rem;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 0.35rem;
+}
+.dingdan-box a {
+	display: inline-block;
+	font-size: 0.26rem;
+	margin-top: 1rem;
+	height: 0.75rem;
+	border-radius: 0.45rem;
+	color: #FFFFFF;
+	background: #6fb1fb;
+	padding: 0.25rem;
+	margin-left: 1.5rem;
+}
+.dingdan-box a:nth-of-type(2) {
+	margin-left: 0.5rem;
+	background: #bfbfbf;
+}
+/*支付详情结束*/
+
+/*商家推荐开始*/
+.tuijian {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0.3rem 0;
+	position: absolute;
+	left: 0;
+	top: 8rem;
+}
+.tuijian .xiushi {
+	width: 1.2rem;
+	height: 0.03rem;
+	background: linear-gradient(to right, #c6c7c8, #9b9d9e);
+}
+.tuijian h1 {
+	font-size: 0.24rem;
+	color: #333333;
+	margin: 0 0.1rem;
+}
+.tuijian .xiushi:nth-of-type(2) {
+	transform: rotateZ(180deg);
+}
+/*商家推荐结束*/
+
+/*列表开始*/
+.list-box {
+	width: 100%;
+	position: absolute;
+	top: 9rem;
+	bottom: 0;
+	background: #e1ecf1;
+	padding: 0.25rem;
+	overflow-y: scroll;
+	/*overflow-x: hidden;*/
+}
+.list-box::-webkit-scrollbar {
+	width:0;
+	height:0;
+	display:none;
+}
+.list-box li {
+	width: 100%;
+	height: 2.4rem;
+	margin-bottom: 0.25rem;
+	box-shadow: 0 0.05rem 0.2rem 0.02rem #817d7d;
+	border-radius: 0.05rem;
+	background: #FFFFFF;
+	padding: 0.25rem;
+}
+.list-box li a {
+	width: 100%;
+	height: 100%;
+}
+.img-box {
+	width: 1.05rem;
+	height: 1.05rem;
+	margin-right: 0.25rem;
+	float: left;
+}
+.img-box img {
+	width: 100%;
+	height: 100%;
+}
+.list-text {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 1.9rem;
+}
+.list-text h1 {
+	font-size: 0.24rem;
+	color: #333333;
+}
+.list-text .text1 {
+	width: 100%;
+	height: 0.18rem;
+	color: #808080;
+}
+.list-text .text1 .imgwrap {
+	width: 0.6rem;
+	height: 0.1rem;
+	float: left;
+	position: relative;
+}
+.list-text .text1 .imgwrap img {
+	width: 100%;
+	height: 100%;
+	margin-top: 0.03rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: left;
+}
+.list-text .text1 .imgwrap:nth-of-type(2){
+	width: 0.3rem;
+}
+.list-text .text1 p {
+	display: inline-block;
+	float: left;
+	font-size: 0.18rem;
+	margin-right: 0.65rem;
+}
+.list-text .text1 .fengniao {
+	background: #060bf0;
+	color: #FFFFFF;
+	float: right;
+	font-size: 0.16rem;
+	line-height: 0.18rem;
+	height: 0.18rem;
+}
+.list-text .text2 p {
+	font-size: 0.18rem;
+	color: #808080;
+	display: inline-block;
+	float: left;
+}
+.list-text .text2 p:last-child {
+	float: right;
+}
+.list-text .text3 {
+	width: 100%;
+	border-bottom: 0.03rem dashed #808080;
+}
+.list-text .text4 span {
+	width: 0.22rem;
+	height: 0.22rem;
+	background: red;
+	color: #FFFFFF;
+	float: left;
+	margin-right: 0.05rem;
+	font-size: 0.2rem;
+}
+.list-text .text4 p {
+	display: inline-block;
+	float: left;
+	font-size: 0.2rem;
+	color: #808080;
+	line-height: 0.22rem;
+}
+.list-text .text4 p:nth-of-type(2) {
+	float: right;
+}
+.list-text .text4 i {
+	display: inline-block;
+	font-size: 0.22rem;
+	float: right;
+	color: #808080;
+}
+.list-text .text5 i {
+	display: inline-block;
+	float: left;
+	font-size: 0.22rem;
+	color: #f0dd06;
+	margin-right: 0.05rem;
+}
+.list-text .text5 p {
+	display: inline-block;
+	float: left;
+	font-size: 0.2rem;
+	color: #808080;
+}
+/*列表结束*/
